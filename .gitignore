@@ -1,0 +1,90 @@
+# ==========================
+# Variables de entorno / secretos
+# ==========================
+.env
+.env.*
+!.env.example
+BackEnd/.env
+FrontEnd/.env
+*.pem
+*.key
+
+# ==========================
+# Python / FastAPI (BackEnd)
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+BackEnd/.venv/
+BackEnd/venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Alembic (mantener versions/, ignorar solo cache)
+**/alembic/__pycache__/
+
+# ==========================
+# Node / React (FrontEnd)
+# ==========================
+FrontEnd/node_modules/
+node_modules/
+FrontEnd/build/
+FrontEnd/dist/
+FrontEnd/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# ==========================
+# Docker
+# ==========================
+*.env.docker
+docker-compose.override.yml
+
+# ==========================
+# Bases de datos (SQL Server / PostgreSQL)
+# ==========================
+*.bak
+*.mdf
+*.ldf
+*.sql.gz
+*.dump
+*.pgdata/
+pgdata/
+mssql_data/
+
+# Salidas de auditoría / datos generados (no versionar resultados, solo el script)
+BackEnd/auditoria_dbs_invalidas.csv
+BackEnd/auditoria_dbs_validas.csv
+BackEnd/auditoria_dbs_resumen.json
+
+# ==========================
+# Logs
+# ==========================
+*.log
+scada.log
+BackEnd/scada.log
+
+# ==========================
+# Editor / OS
+# ==========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Static/uploads generados en runtime (ajustar si se versiona contenido real)
+# ==========================
+BackEnd/static/uploads/
