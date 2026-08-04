@@ -1,6 +1,4 @@
-# ==========================
 # Variables de entorno / secretos
-# ==========================
 .env
 .env.*
 !.env.example
@@ -9,9 +7,7 @@ FrontEnd/.env
 *.pem
 *.key
 
-# ==========================
 # Python / FastAPI (BackEnd)
-# ==========================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -28,13 +24,9 @@ BackEnd/venv/
 htmlcov/
 .coverage
 .coverage.*
-
-# Alembic (mantener versions/, ignorar solo cache)
 **/alembic/__pycache__/
 
-# ==========================
 # Node / React (FrontEnd)
-# ==========================
 FrontEnd/node_modules/
 node_modules/
 FrontEnd/build/
@@ -46,15 +38,11 @@ yarn-error.log*
 pnpm-debug.log*
 .eslintcache
 
-# ==========================
 # Docker
-# ==========================
 *.env.docker
 docker-compose.override.yml
 
-# ==========================
 # Bases de datos (SQL Server / PostgreSQL)
-# ==========================
 *.bak
 *.mdf
 *.ldf
@@ -64,27 +52,22 @@ docker-compose.override.yml
 pgdata/
 mssql_data/
 
-# Salidas de auditoría / datos generados (no versionar resultados, solo el script)
+# Salidas de auditoría generadas
 BackEnd/auditoria_dbs_invalidas.csv
 BackEnd/auditoria_dbs_validas.csv
 BackEnd/auditoria_dbs_resumen.json
 
-# ==========================
 # Logs
-# ==========================
 *.log
 scada.log
 BackEnd/scada.log
 
-# ==========================
 # Editor / OS
-# ==========================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# ==========================
-# Static/uploads generados en runtime (ajustar si se versiona contenido real)
-# ==========================
+# Static/uploads en runtime
 BackEnd/static/uploads/
+EOF
